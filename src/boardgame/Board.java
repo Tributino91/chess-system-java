@@ -4,7 +4,7 @@ public class Board {
 
 	private int rows;
 	private int columns;
-	private Piece [] [] pieces;
+	private Piece [][] pieces;
 	
 	public Board(int rows, int columns) {
 		if (rows < 1  || columns <1) {
@@ -56,8 +56,7 @@ public class Board {
 		aux.position = null;
 		pieces [position.getRow()][position.getColumn()] = null;
 		return aux;
-		
-		
+			
 	}
 	
 	private boolean positionExists(int row, int column) {
